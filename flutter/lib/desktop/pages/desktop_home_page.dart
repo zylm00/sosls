@@ -124,7 +124,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
     return ChangeNotifierProvider.value(
       value: gFFI.serverModel,
       child: Container(
-        color: const Color(0xFFF4F8FC8),
+        color: const Color(0xFFFD7E6F5),
         child: Column(
           children: [
             Expanded(
@@ -259,7 +259,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         children: [
           Text(
             translate("One-time Password"),
-            style: const TextStyle(fontSize: 10, color: Color(0xFF7AAB92), letterSpacing: 0.04),
+            style: const TextStyle(fontSize: 10, color: Color(0xFF7E9BC6), letterSpacing: 0.04),
           ),
           const SizedBox(height: 2),
           Row(
