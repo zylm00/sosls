@@ -124,7 +124,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
     return ChangeNotifierProvider.value(
       value: gFFI.serverModel,
       child: Container(
-        color: const Color(0xFFF7FAF8),
+        color: const Color(0xFFFF8D68),
         child: Column(
           children: [
             Expanded(
@@ -156,7 +156,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
 
   buildRightPane(BuildContext context) {
     return Container(
-      color: const Color(0xFFF7FAF8),
+      color: const Color(0xFFFF8D68),
       child: ConnectionPage(),
     );
   }
@@ -191,6 +191,8 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                 border: InputBorder.none,
                 isDense: true,
                 contentPadding: EdgeInsets.zero,
+                filled: false,
+                fillColor: Colors.transparent,
               ),
               style: const TextStyle(
                 fontSize: 20,
@@ -278,6 +280,8 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                       border: InputBorder.none,
                       isDense: true,
                       contentPadding: EdgeInsets.zero,
+                      filled: false,
+                      fillColor: Colors.transparent,
                     ),
                     style: const TextStyle(
                       fontSize: 15,
