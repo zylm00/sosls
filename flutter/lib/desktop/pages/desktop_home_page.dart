@@ -124,7 +124,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
     return ChangeNotifierProvider.value(
       value: gFFI.serverModel,
       child: Container(
-        color: const Color(0xFFFF8D68),
+        color: const Color(0xFFF4F8FC8),
         child: Column(
           children: [
             Expanded(
@@ -141,10 +141,10 @@ class _DesktopHomePageState extends State<DesktopHomePage>
               padding: const EdgeInsets.only(left: 20, right: 16, bottom: 6),
               child: Text(
                 translate("温馨提示：sos版本无安装点关闭即可"),
-                style: TextStyle(fontSize: 10, color: const Color(0xFF8AB8A2)),
+                style: TextStyle(fontSize: 10, color: const Color(0xFF7B8BA1)),
               ),
             ),
-            Divider(color: const Color(0xFFD4EDE2), height: 1),
+            Divider(color: const Color(0xFFD7E6F5), height: 1),
             OnlineStatusWidget(
               onSvcStatusChanged: () {},
             ).marginOnly(bottom: 6, right: 6),
@@ -156,7 +156,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
 
   buildRightPane(BuildContext context) {
     return Container(
-      color: const Color(0xFFFF8D68),
+      color: const Color(0xFFF4F8FC),
       child: ConnectionPage(),
     );
   }
@@ -167,7 +167,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       margin: const EdgeInsets.only(left: 14, right: 14, bottom: 8),
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: const Color(0xFFD4EDE2), width: 0.5),
+        border: Border.all(color: const Color(0xFFD7E6F5), width: 0.5),
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
@@ -176,7 +176,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         children: [
           Text(
             translate("ID"),
-            style: const TextStyle(fontSize: 10, color: Color(0xFF7AAB92), letterSpacing: 0.04),
+            style: const TextStyle(fontSize: 10, color: Color(0xFF1E293B), letterSpacing: 0.04),
           ),
           const SizedBox(height: 2),
           GestureDetector(
@@ -197,7 +197,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF1E5C42),
+                color: Color(0xFF1E293B),
                 letterSpacing: 0.03,
               ),
             ).workaroundFreezeLinuxMint(),
@@ -250,7 +250,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       margin: const EdgeInsets.only(left: 14, right: 14, bottom: 8),
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: const Color(0xFFD4EDE2), width: 0.5),
+        border: Border.all(color: const Color(0xFFD7E6F5), width: 0.5),
         borderRadius: BorderRadius.circular(8),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
@@ -286,7 +286,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                     style: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF1E5C42),
+                      color: Color(0xFF1E293B),
                     ),
                   ).workaroundFreezeLinuxMint(),
                 ),
@@ -300,14 +300,14 @@ class _DesktopHomePageState extends State<DesktopHomePage>
                       width: 22,
                       height: 22,
                       decoration: const BoxDecoration(
-                        color: Color(0xFFD4EDE2),
+                        color: Color(0xFFD7E6F5),
                         shape: BoxShape.circle,
                       ),
                       child: Icon(
                         Icons.refresh,
                         color: refreshHover.value
-                            ? const Color(0xFF1E5C42)
-                            : const Color(0xFF3AAA7A),
+                            ? const Color(0xFF1E293B)
+                            : const Color(0xFF3B82F6),
                         size: 14,
                       ),
                     )),
@@ -334,7 +334,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
               style: const TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w500,
-                color: Color(0xFF1E5C42),
+                color: Color(0xFF1E293B),
               ),
             ),
           const SizedBox(height: 2),
@@ -342,13 +342,13 @@ class _DesktopHomePageState extends State<DesktopHomePage>
             Text(
               translate("desk_tip"),
               overflow: TextOverflow.clip,
-              style: const TextStyle(fontSize: 11, color: Color(0xFF8AB8A2)),
+              style: const TextStyle(fontSize: 11, color: Color(0xFF7B8BA1)),
             ),
           if (isOutgoingOnly)
             Text(
               translate("outgoing_only_desk_tip"),
               overflow: TextOverflow.clip,
-              style: const TextStyle(fontSize: 11, color: Color(0xFF8AB8A2)),
+              style: const TextStyle(fontSize: 11, color: Color(0xFF7B8BA1)),
             ),
         ],
       ),
@@ -369,7 +369,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
               side: const BorderSide(color: Color(0xFFA8D4BE), width: 0.5),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
               padding: const EdgeInsets.symmetric(vertical: 10),
-              foregroundColor: const Color(0xFF1E5C42),
+              foregroundColor: const Color(0xFF1E293B),
               backgroundColor: Colors.transparent,
             ),
             onPressed: () {
@@ -381,7 +381,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.copy_outlined, size: 15, color: Color(0xFF3AAA7A)),
+                const Icon(Icons.copy_outlined, size: 15, color: Color(0xFF3B82F6)),
                 const SizedBox(width: 6),
                 Text(translate("Copy ID and Password"),
                     style: const TextStyle(fontSize: 13)),
