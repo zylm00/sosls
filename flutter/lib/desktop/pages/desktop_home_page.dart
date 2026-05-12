@@ -124,7 +124,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
     return ChangeNotifierProvider.value(
       value: gFFI.serverModel,
       child: Container(
-        color: const Color(0xFFFD7E6F5),
+        color: const Color(0xFFD7E6F5),
         child: Column(
           children: [
             Expanded(
